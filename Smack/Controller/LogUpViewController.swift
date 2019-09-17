@@ -49,6 +49,7 @@ class LogUpViewController: UIViewController {
     }
     
     @IBAction func chooseAvatarPressed(_ sender: Any) {
+        performSegue(withIdentifier: TO_AVATAR_PICKER, sender: nil)
     }
     
     @IBAction func chooseBackColorPressed(_ sender: Any) {
