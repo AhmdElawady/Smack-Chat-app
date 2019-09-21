@@ -22,6 +22,7 @@
 		C23DD7752317DC1A00CD6A50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C23DD7732317DC1A00CD6A50 /* LaunchScreen.storyboard */; };
 		C282B79623304BB600D1DA91 /* AvatarPickerViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C282B79523304BB600D1DA91 /* AvatarPickerViewControler.swift */; };
 		C282B79823305AAF00D1DA91 /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C282B79723305AAF00D1DA91 /* AvatarCell.swift */; };
+		C282B79A2335CDEE00D1DA91 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C282B7992335CDEE00D1DA91 /* CircleImage.swift */; };
 		C28389A9231FA926007130E7 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28389A8231FA926007130E7 /* RoundedButton.swift */; };
 		C2E9BCF7231C0534009FF574 /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E9BCF6231C0534009FF574 /* AuthServices.swift */; };
 		C2F3504F2322B0960039FDA1 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F3504E2322B0960039FDA1 /* UserDataService.swift */; };
@@ -49,6 +50,7 @@
 		C23DD7762317DC1A00CD6A50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C282B79523304BB600D1DA91 /* AvatarPickerViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerViewControler.swift; sourceTree = "<group>"; };
 		C282B79723305AAF00D1DA91 /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
+		C282B7992335CDEE00D1DA91 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		C28389A8231FA926007130E7 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		C2E9BCF6231C0534009FF574 /* AuthServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServices.swift; sourceTree = "<group>"; };
 		C2F3504E2322B0960039FDA1 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				C22DAFD82317F57500C46FA2 /* GradientView.swift */,
 				C28389A8231FA926007130E7 /* RoundedButton.swift */,
 				C282B79723305AAF00D1DA91 /* AvatarCell.swift */,
+				C282B7992335CDEE00D1DA91 /* CircleImage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				C22DAFDC2318321900C46FA2 /* Constants.swift in Sources */,
 				C22DAFD02317DD4B00C46FA2 /* SWRevealViewController.m in Sources */,
 				C22DAFD72317DF0000C46FA2 /* ChannelViewController.swift in Sources */,
+				C282B79A2335CDEE00D1DA91 /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
