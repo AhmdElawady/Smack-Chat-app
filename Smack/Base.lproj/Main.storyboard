@@ -105,13 +105,6 @@
                                 <rect key="frame" x="320" y="107" width="22" height="22"/>
                                 <state key="normal" image="addChannelButton"/>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="txw-sh-xEV" customClass="CircleImage" customModule="Smack" customModuleProvider="target">
-                                <rect key="frame" x="10" y="807" width="75" height="75"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="X9b-GI-Irm"/>
-                                    <constraint firstAttribute="width" constant="75" id="ar1-LE-OpW"/>
-                                </constraints>
-                            </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IXE-oL-QpO">
                                 <rect key="frame" x="10" y="149" width="394" height="639"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -131,6 +124,7 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="P1n-lq-1ay" secondAttribute="trailing" constant="20" symbolic="YES" id="CDh-Va-EwM"/>
                                                 <constraint firstItem="P1n-lq-1ay" firstAttribute="centerY" secondItem="iaM-r0-lwK" secondAttribute="centerY" id="MJN-Sh-3Gj"/>
                                                 <constraint firstItem="P1n-lq-1ay" firstAttribute="leading" secondItem="iaM-r0-lwK" secondAttribute="leading" constant="20" id="hAu-6w-FSR"/>
                                             </constraints>
@@ -149,15 +143,24 @@
                                     <action selector="loginButtonPressed:" destination="ljl-D4-JKE" eventType="touchUpInside" id="di3-0a-1Vv"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="txw-sh-xEV" customClass="CircleImage" customModule="Smack" customModuleProvider="target">
+                                <rect key="frame" x="10" y="807" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="X9b-GI-Irm"/>
+                                    <constraint firstAttribute="width" constant="75" id="ar1-LE-OpW"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="IXE-oL-QpO" firstAttribute="top" secondItem="LeG-CX-fz7" secondAttribute="bottom" constant="20" id="2bo-en-hUT"/>
                             <constraint firstItem="zrW-B6-TmH" firstAttribute="trailing" secondItem="LeG-CX-fz7" secondAttribute="trailing" constant="72" id="2lD-Ha-epL"/>
+                            <constraint firstItem="zrW-B6-TmH" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="FQ4-8h-iCv" secondAttribute="trailing" symbolic="YES" id="3ed-j0-KMV"/>
                             <constraint firstItem="txw-sh-xEV" firstAttribute="bottom" secondItem="zrW-B6-TmH" secondAttribute="bottom" constant="20" id="KUM-7Y-HJD"/>
                             <constraint firstItem="Y3E-nP-4Jd" firstAttribute="leading" secondItem="zrW-B6-TmH" secondAttribute="leading" constant="10" id="M1L-Vj-Ts4"/>
                             <constraint firstItem="zrW-B6-TmH" firstAttribute="trailing" secondItem="IXE-oL-QpO" secondAttribute="trailing" constant="10" id="NhT-Yi-CAK"/>
                             <constraint firstItem="FQ4-8h-iCv" firstAttribute="leading" secondItem="txw-sh-xEV" secondAttribute="trailing" constant="20" id="Nz4-Xe-g09"/>
+                            <constraint firstItem="zrW-B6-TmH" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dfy-V9-71F" secondAttribute="trailing" symbolic="YES" id="OPu-jl-g5F"/>
                             <constraint firstItem="Y3E-nP-4Jd" firstAttribute="top" secondItem="dfy-V9-71F" secondAttribute="bottom" constant="20" id="VYW-5r-QqS"/>
                             <constraint firstItem="txw-sh-xEV" firstAttribute="leading" secondItem="zrW-B6-TmH" secondAttribute="leading" constant="10" id="Vzf-br-zX9"/>
                             <constraint firstItem="IXE-oL-QpO" firstAttribute="leading" secondItem="zrW-B6-TmH" secondAttribute="leading" constant="10" id="W8q-gi-4Y9"/>
@@ -166,11 +169,13 @@
                             <constraint firstItem="dfy-V9-71F" firstAttribute="leading" secondItem="zrW-B6-TmH" secondAttribute="leading" constant="10" id="YDO-Lq-7vR"/>
                             <constraint firstItem="FQ4-8h-iCv" firstAttribute="top" secondItem="IXE-oL-QpO" secondAttribute="bottom" constant="40" id="by2-Yn-Fdv"/>
                             <constraint firstItem="dfy-V9-71F" firstAttribute="top" secondItem="zrW-B6-TmH" secondAttribute="top" constant="24" id="eia-ol-4ez"/>
+                            <constraint firstItem="LeG-CX-fz7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Y3E-nP-4Jd" secondAttribute="trailing" constant="8" symbolic="YES" id="wfH-aL-VFr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zrW-B6-TmH"/>
                     </view>
                     <connections>
                         <outlet property="loginButton" destination="FQ4-8h-iCv" id="MEy-1j-jHe"/>
+                        <outlet property="userImage" destination="txw-sh-xEV" id="MxJ-hr-M4l"/>
                         <segue destination="kC8-sf-wLG" kind="show" identifier="toLogin" id="x73-pV-F1i"/>
                     </connections>
                 </viewController>
@@ -280,7 +285,14 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginPressed:" destination="kC8-sf-wLG" eventType="touchUpInside" id="p6P-vK-Ukt"/>
+                                </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Wjd-Lv-0ua">
+                                <rect key="frame" x="188.5" y="229.5" width="37" height="37"/>
+                                <color key="color" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -292,12 +304,17 @@
                             <constraint firstItem="5dm-N7-Epk" firstAttribute="top" secondItem="uy6-dr-1Nb" secondAttribute="bottom" constant="40" id="VNu-yj-9jO"/>
                             <constraint firstItem="eNz-D0-b6J" firstAttribute="top" secondItem="3W5-D8-I4L" secondAttribute="top" constant="8" id="VcP-A9-DI1"/>
                             <constraint firstItem="R0G-7b-1O8" firstAttribute="top" secondItem="5dm-N7-Epk" secondAttribute="bottom" id="Wjq-7s-hIa"/>
+                            <constraint firstItem="Wjd-Lv-0ua" firstAttribute="centerX" secondItem="yZR-ru-fC6" secondAttribute="centerX" id="kNf-WF-pai"/>
+                            <constraint firstItem="Wjd-Lv-0ua" firstAttribute="centerY" secondItem="yZR-ru-fC6" secondAttribute="centerY" constant="-200" id="kuQ-6b-tT6"/>
                             <constraint firstItem="uy6-dr-1Nb" firstAttribute="top" secondItem="iP3-DM-qoQ" secondAttribute="bottom" constant="40" id="qhF-Dj-GbV"/>
                             <constraint firstItem="iP3-DM-qoQ" firstAttribute="top" secondItem="3W5-D8-I4L" secondAttribute="top" constant="60" id="xdM-AT-NkQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3W5-D8-I4L"/>
                     </view>
                     <connections>
+                        <outlet property="emailText" destination="LWB-7v-wMI" id="mX5-Ns-bYi"/>
+                        <outlet property="passwordText" destination="p3K-U6-ZOE" id="pXA-7z-Pxd"/>
+                        <outlet property="spinner" destination="Wjd-Lv-0ua" id="Thd-uI-Q5B"/>
                         <segue destination="WVJ-dh-2n6" kind="show" identifier="toCreateAccount" id="0Hq-Fj-L8r"/>
                     </connections>
                 </viewController>

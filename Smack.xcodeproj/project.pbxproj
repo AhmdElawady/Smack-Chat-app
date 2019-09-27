@@ -20,6 +20,8 @@
 		C23DD7702317DC1900CD6A50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C23DD76E2317DC1900CD6A50 /* Main.storyboard */; };
 		C23DD7722317DC1A00CD6A50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C23DD7712317DC1A00CD6A50 /* Assets.xcassets */; };
 		C23DD7752317DC1A00CD6A50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C23DD7732317DC1A00CD6A50 /* LaunchScreen.storyboard */; };
+		C2544B38233733280065D61F /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2544B36233733280065D61F /* profileViewController.swift */; };
+		C2544B39233733280065D61F /* profileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2544B37233733280065D61F /* profileViewController.xib */; };
 		C282B79623304BB600D1DA91 /* AvatarPickerViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C282B79523304BB600D1DA91 /* AvatarPickerViewControler.swift */; };
 		C282B79823305AAF00D1DA91 /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C282B79723305AAF00D1DA91 /* AvatarCell.swift */; };
 		C282B79A2335CDEE00D1DA91 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C282B7992335CDEE00D1DA91 /* CircleImage.swift */; };
@@ -48,6 +50,8 @@
 		C23DD7712317DC1A00CD6A50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C23DD7742317DC1A00CD6A50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C23DD7762317DC1A00CD6A50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2544B36233733280065D61F /* profileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
+		C2544B37233733280065D61F /* profileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = profileViewController.xib; sourceTree = "<group>"; };
 		C282B79523304BB600D1DA91 /* AvatarPickerViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerViewControler.swift; sourceTree = "<group>"; };
 		C282B79723305AAF00D1DA91 /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
 		C282B7992335CDEE00D1DA91 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
@@ -103,6 +107,7 @@
 				C22DAFDD23194E9E00C46FA2 /* LoginViewController.swift */,
 				C22DAFDF2319696B00C46FA2 /* LogUpViewController.swift */,
 				C282B79523304BB600D1DA91 /* AvatarPickerViewControler.swift */,
+				C2544B36233733280065D61F /* profileViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -154,6 +159,7 @@
 		C23DD7692317DC1900CD6A50 /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				C2544B3A233733800065D61F /* XIBs  */,
 				C2E9BCF5231C04E5009FF574 /* Services */,
 				C22DAFDA231831ED00C46FA2 /* Utilities */,
 				C22DAFD32317DE7E00C46FA2 /* Model */,
@@ -168,6 +174,14 @@
 				C23DD7762317DC1A00CD6A50 /* Info.plist */,
 			);
 			path = Smack;
+			sourceTree = "<group>";
+		};
+		C2544B3A233733800065D61F /* XIBs  */ = {
+			isa = PBXGroup;
+			children = (
+				C2544B37233733280065D61F /* profileViewController.xib */,
+			);
+			path = "XIBs ";
 			sourceTree = "<group>";
 		};
 		C2E9BCF5231C04E5009FF574 /* Services */ = {
@@ -242,6 +256,7 @@
 			files = (
 				C23DD7752317DC1A00CD6A50 /* LaunchScreen.storyboard in Resources */,
 				C23DD7722317DC1A00CD6A50 /* Assets.xcassets in Resources */,
+				C2544B39233733280065D61F /* profileViewController.xib in Resources */,
 				C23DD7702317DC1900CD6A50 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +319,7 @@
 				C282B79623304BB600D1DA91 /* AvatarPickerViewControler.swift in Sources */,
 				C22DAFD92317F57500C46FA2 /* GradientView.swift in Sources */,
 				C22DAFE02319696B00C46FA2 /* LogUpViewController.swift in Sources */,
+				C2544B38233733280065D61F /* profileViewController.swift in Sources */,
 				C22DAFD52317DEE500C46FA2 /* ChatViewController.swift in Sources */,
 				C2E9BCF7231C0534009FF574 /* AuthServices.swift in Sources */,
 				C2F3504F2322B0960039FDA1 /* UserDataService.swift in Sources */,
